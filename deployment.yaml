@@ -15,7 +15,7 @@ spec:
         service: reverseproxy
     spec:
       containers:
-      - image: mohammedismaiel/reverseproxy:v5
+      - image: mohammedismaiel/reverseproxy:v8
         name: reverseproxy
         imagePullPolicy: Always
         command: [ "sleep" ]
