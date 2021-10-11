@@ -1,3 +1,4 @@
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -15,7 +16,7 @@ spec:
         service: reverseproxy
     spec:
       containers:
-      - image: mohammedismaiel/reverseproxy:v8
+      - image: mohammedismaiel/reverseproxy:v9
         name: reverseproxy
         imagePullPolicy: Always
         command: [ "sleep" ]
@@ -30,5 +31,3 @@ spec:
         ports:
         - containerPort: 8080
       restartPolicy: Always
-
-
